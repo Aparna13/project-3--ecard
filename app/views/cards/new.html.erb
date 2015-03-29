@@ -1,0 +1,29 @@
+<nav class="navbar navbar-default navbar-fixed-top color">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand logo font" href="#">E_Cards_Designs</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+        <li class="navbar-text text font">log in | </li> 
+        <li class="navbar-text text"> about us</li>
+        <span id="logout"> <%= link_to "Log out", signout_path %>bmbbmb</span>
+    </ul>
+  </div>
+</nav>
+
+<!-- newcard form -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3 box"></div>
+
+<%= form_for @card do |f| %>
+  <%= f.text_field :title %>
+  <%= f.text_area :desc, size: "60x12" %>
+  <%= f.submit "Create" %>
+<% end %>
+
+
+</div>
+
+</div>

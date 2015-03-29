@@ -1,0 +1,113 @@
+body {
+/*  background: #e75b4c;*/
+}
+.color {
+  /*background: #e75b4c;*/
+}
+
+.navbar-text {
+  color: white;
+}
+
+.navcolor .active a,
+.navcolor .active a:hover {
+    background-color: red;
+
+}
+.nav{
+  margin-right: 5%;
+}
+
+.logo{
+  font-family: 'Poiret One', cursive;
+  font-size: 50px;
+  font-color: white;
+}
+
+.text{
+  margin-top: 15%;
+  font-size: 20px;
+}
+
+.font1{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+
+.font2{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 400;
+}
+
+.font3{
+font-family: 'Poiret One', cursive;
+font-weight: 400;
+}
+
+
+.rect {
+  height:200px;
+ /* border-style: solid;
+  border-color: grey;
+  border-width: 2px;*/
+    margin:1%;
+}
+
+
+h1 {
+  margin-bottom: 0;
+  color: #FFF;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 6em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.25em;
+}
+
+.bold{
+  margin-top: 30em;
+  color: #f6c2bc;
+  font-size: 5em;
+  
+}
+
+.arrow{
+  margin-top: 20%;
+  font-size: 55px;
+  color: rgba(255,255,255, 0.5);
+  background-color: transparent;
+  border: none;
+}
+
+a.arrow:hover{
+  color: rgba(255,255,255);
+}
+.allcards {
+  margin-top: 10%;
+  margin-left: 15%;
+}
+
+.btn-outline {
+    background: transparent;
+    color: inherit;
+    transition: all .5s;
+}
+
+.btn-primary.btn-outline {
+    color: white;
+}
+
+.btn-primary.btn-outline:hover
+{
+    color: #fff;
+}
+
+.box {
+  margin-top: 12%;
+  border-style: solid;
+  border-color: #E6E6E6;
+  border-width: 2px;
+  height: 300px;
+  border-radius: 10px;
+}

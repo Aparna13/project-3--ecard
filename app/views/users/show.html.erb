@@ -1,0 +1,38 @@
+
+<nav class="navbar navbar-default navbar-fixed-top color">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand logo font" href="#">E_Cards_Designs</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+        <li class="navbar-text text font">log in | </li> 
+        <li class="navbar-text text"> about us</li>
+        <span id="logout"> <%= link_to "Log out", signout_path %>bmbbmb</span>
+    </ul>
+  </div>
+</nav>
+
+<!-- allcards section begins-->
+
+<div class="allcards text-center">
+<div class = "row">
+<%= link_to "Make my card", new_user_card_path(@user) %>
+<div class = 'col-sm-3 rect'></div>
+  <div class = 'col-sm-3 rect'><img src="http://cdn.coolmompicks.com/wp-content/uploads/2013/11/ScreenShot2013-07-29at100534AM.png" width ="100%" height = "100%" alt="">
+  <br>
+  <br>
+  <p>
+  <span class="cardtitle">by: Sachi</span>&nbsp; &nbsp; &nbsp;
+  <span class="likes"> Like <span class="badge">42</span></span>
+  </p>
+  </div>
+  
+  <div class = 'col-sm-3 rect'></div>
+</div>
+
+<div class = "row">
+  <div class = 'col-sm-3 rect'></div><div class = 'col-sm-3 rect'></div><div class = 'col-sm-3 rect'>
+    
+  </div>
+</div>
