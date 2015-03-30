@@ -22,7 +22,7 @@ $(document).ready(function(){
     // $(".introduction").slideUp();
     $('body').css("background-color", "white");
     $('.color').css("background", "white");
-    
+    $('.textarea').wysihtml5();
     // $(".allcards").show();
   });
 

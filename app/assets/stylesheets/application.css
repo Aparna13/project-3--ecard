@@ -26,7 +26,7 @@ body {
 
 .text{
   margin-top: 15%;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .font1{
@@ -68,8 +68,7 @@ h1 {
 .bold{
   margin-top: 30em;
   color: #f6c2bc;
-  font-size: 5em;
-  
+  font-size: 5em;  
 }
 
 .arrow{
@@ -110,4 +109,81 @@ a.arrow:hover{
   border-width: 2px;
   height: 300px;
   border-radius: 10px;
+  margin-left: 22%;
+}
+
+.image {
+  /*background: red;*/
+  width: 60%;
+   height: 100%;
+  float: left;
+}
+
+.cardtext {
+  /*background: blue;*/
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+}
+
+.form {
+ background-color: transparent;
+  font-size: 15px;
+  border: none;
+  /*border-radius: 10px;*/
+}
+
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-size: 15px;
+}
+
+.footer {
+background: rgba(51,51,51,0.6);
+height: 90px;
+}
+
+.outline {
+  /*width:40%;*/
+  height: 60%;
+  border-style:dotted;
+  border-color: #E6E6E6;
+  border-width: 2px;
+  margin-top: 5%;
+
+}
+
+.numberCircle {
+    border-radius: 50%;
+  margin-left: 27%;
+    width: 46px;
+    height: 46px;
+    padding: 10px;
+
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+
+    font: 15px Arial, sans-serif;
+     z-index: 1;
+     position: relative;
+}
+
+.circle2 {
+  margin-left: 15%;
+   z-index: 1;
+   position: relative;
+}
+.line {
+  
+    z-index: -1;
+    position: relative;
+
 }

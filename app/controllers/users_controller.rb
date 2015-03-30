@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_action :check_login, :require_user
 
   def index
+
     @user = User.find(params[:user_id])
 
     unless @user.first_name
@@ -15,6 +16,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @users = User.all
     @user = User.find(params[:id])
   end
 

@@ -9,8 +9,9 @@ class CardsController < ApplicationController
 
   def create
     @card = Card.new(card_params)
-    @card.users << @user_id
-
+    # @card.users << @user_id
+    @card.update(image_url: params[:uploadcare])
+    
     if @card.save
       redirect_to @user
     else

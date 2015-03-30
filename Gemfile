@@ -29,6 +29,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
 
 gem 'omniauth-facebook'
+gem 'bootstrap-wysihtml5-rails'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
