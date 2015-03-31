@@ -7,15 +7,15 @@
       <a class="navbar-brand logo font" href="#">E_Cards_Designs</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-        <li class="navbar-text"><%= link_to "Home", root_path %></li> 
-        <li class="navbar-text"><%= link_to "Log out", signout_path %></li>
+        <li class="navbar-text bold"><%= link_to "| Home |", root_path %>|</li> 
+        <li class="navbar-text bold"><%= link_to "Log out", signout_path %></li>
       
     </ul>
   </div>
 </nav>
 
 <!-- newcard form -->
-     <%= stylesheet_link_tag    'cards'%>
+     <%= stylesheet_link_tag    'pages'%>
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3 box">
@@ -25,9 +25,9 @@
       </div>
       <div class="cardtext">
         <%= form_for @card,url: user_cards_path, html: {:class => "form-group"} do |f| %>
-          <%= f.text_field :title,:placeholder => "Title",:size => "26x18"  %>
+          <%= f.text_field :title,:placeholder => "To,",:size => "26x18"  %>
           <p></p>
-          <%= f.text_area :desc,:placeholder => "your message here" ,:size => "24x12", id: "maintext"%>
+          <%= f.text_area :desc,:placeholder => "message" ,:size => "20x12", id: "maintext"%>
           <p class="text-center" style="display:inline-block;">
             <input type="hidden" role="uploadcare-uploader"  data-images-only="" data-image-shrink="300x180 80%" data-public-key="e638bf2c12305f92b0c7" value="" name="card[image_url]" class="btn btn-info">
           </p>
@@ -45,7 +45,7 @@
         </button>
         <ul class="dropdown-menu" role="menu">
           <li><a href="javascript:void(0)"><img src="http://makinglemonadeblog.com/wp-content/uploads/2013/01/chalkboard_background_2.jpg" class="smimg" id="backbtn" alt=""></a></li>
-          <li><a href="javascript:void(0)"><img src="" class="smimg" alt=""></a></li>
+          <li><a href="javascript:void(0)"><img src="" class="smimg" id="backwhtbtn" alt=""></a></li>
         </ul>
       </div>
       <p></p>
@@ -73,14 +73,14 @@
     </div> <!-- closing the row -->
   </div>
 
-<!-- </div>
+</div>
 <div class="navbar navbar-default  navbar-fixed-bottom footer">
 <div class="container">
 <div class ="col-sm-11 col-sm-offset-1"></div>
-<hr class="line" width="448" align="center" size="10">
+<!-- <hr class="line" width="448" align="center" size="10"> -->
   <div class="numberCircle navbar-text">1</div>
    <div class="numberCircle navbar-text circle2">2</div><div class="numberCircle navbar-text circle2">3</div>
-</div> -->
+</div>
 
 <!-- <script type="text/javascript">
   tinyMCE.init({
@@ -100,9 +100,12 @@
   $(document).ready(function(){
     var widget = uploadcare.Widget('[role=uploadcare-uploader]');
     widget.onUploadComplete(function(info) {
-      imageUrl = info.cdnUrl;
-      // $(".image").css('background-image', 'url(' + imageUrl + ')');
-      $(".img").attr("src", info.cdnUrl);
-    });  
+      image = info.cdnUrl;
+      $(".image").css('background-image', 'url(' + image + ')');
+      // $(".img").attr("src", info.cdnUrl);
+    });
+    <% if @templateCard %>
+    $(".image").css('background-image', 'url(<%= @templateCard.image_url %>)');
+    <% end  %>
   });
 </script>

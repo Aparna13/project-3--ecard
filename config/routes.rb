@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
   root 'site#index'
-  get '/cards', to: 'site#showall'
+
+
 
   get '/auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')

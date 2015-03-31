@@ -4,12 +4,13 @@ class CardsController < ApplicationController
   end
 
   def new
+    @templateCard = Card.find_by_id(params[:template])
     @card = Card.new
   end
 
   def create
     @card = Card.new(card_params)
-    # @card.users << @user_id
+    @card.users << @user
     # @card.update(image_url: params[:image_url])
     
     if @card.save
@@ -21,6 +22,7 @@ class CardsController < ApplicationController
   end
 
   def show
+    @card = Card.find(params[:id])
   end
 
   def edit

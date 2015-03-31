@@ -1,2 +1,39 @@
-<h1>Cards#show</h1>
-<p>Find me in app/views/cards/show.html.erb</p>
+<nav class="navbar colorwhite">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand logo font" href="#">E_Cards_Designs</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+        <li class="navbar-text"><%= link_to "Home", root_path %></li> 
+        <li class="navbar-text"><%= link_to "Log out", signout_path %></li>
+      
+    </ul>
+  </div>
+</nav>
+
+     <%= stylesheet_link_tag    'pages'%>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3 box">
+      <div class="image">
+        <!--  -->
+      </div>
+      <div class="cardtext">
+        <%= @card.title %>
+        <p></p>
+        <%= @card.desc %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="navbar navbar-default  navbar-fixed-bottom footer">
+<div class="container">
+<div class ="col-sm-11 col-sm-offset-1"></div>
+<!-- <hr class="line" width="448" align="center" size="10"> -->
+  <div class="numberCircle navbar-text">1</div>
+   <div class="numberCircle navbar-text circle2">2</div><div class="numberCircle navbar-text circle2">3</div>
+</div>
+
