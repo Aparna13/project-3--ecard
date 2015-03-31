@@ -31,6 +31,8 @@ gem 'figaro'
 gem 'omniauth-facebook'
 gem 'bootstrap-wysihtml5-rails'
 
+gem 'tinymce-rails'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

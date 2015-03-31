@@ -12,31 +12,20 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require tinymce
 //= require_tree .
 
 
-$(document).ready(function(){
-  // $(".allcards").hide();
-  $('#login').on('click',function(e){
-    // $(".introduction").slideUp();
-    $('body').css("background-color", "white");
-    $('.color').css("background", "white");
-    $('.textarea').wysihtml5();
-    // $(".allcards").show();
-  });
+// $(document).ready(function(){
+//   // $(".allcards").hide();
+//   $('#login').on('click',function(e){
+//     // $(".introduction").slideUp();
+//     $('body').css("background-color", "white");
+//     $('.color').css("background", "white");
+//     $('.wysihtml5').each(function(i, elem) {
+//     $(elem).wysihtml5();
+//   });
+//     // $(".allcards").show();
+//   });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-});
+// });

@@ -5,6 +5,10 @@ body {
   /*background: #e75b4c;*/
 }
 
+.colorwhite {
+  background: white;
+}
+
 .navbar-text {
   color: white;
 }
@@ -103,13 +107,14 @@ a.arrow:hover{
 }
 
 .box {
-  margin-top: 12%;
+  /*margin-top: 12%;*/
   border-style: solid;
   border-color: #E6E6E6;
   border-width: 2px;
-  height: 300px;
   border-radius: 10px;
-  margin-left: 22%;
+  height: 300px;
+  
+  /*margin-left: 22%;*/
 }
 
 .image {
@@ -127,7 +132,7 @@ a.arrow:hover{
 }
 
 .form {
- background-color: transparent;
+ background: transparent;
   font-size: 15px;
   border: none;
   /*border-radius: 10px;*/
@@ -186,4 +191,35 @@ height: 90px;
     z-index: -1;
     position: relative;
 
+}
+
+.controlls {
+  /*margin-top: -32%;*/
+  /*float:right;*/
+}
+
+.modern {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+.cursive {
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+}
+.smimg {
+  width:50px;
+  height: 50px;
+}
+
+.img {
+/*  max-width: 100%;*/
+}
+.cardtext textarea {
+  background: transparent;
+}
+
+.cardtext input {
+  background: transparent;
+  border: none;
 }
