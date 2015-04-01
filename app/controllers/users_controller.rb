@@ -18,6 +18,12 @@ class UsersController < ApplicationController
   def show
     @users = User.all
     @user = User.find(params[:id])
+    @cards = []
+    uniq_image_urls = Card.all.pluck(:image_url).uniq
+    
+    uniq_image_urls.each do |image_url|
+      @cards << Card.find_by_image_url(image_url) 
+    end
   end
 
   def edit

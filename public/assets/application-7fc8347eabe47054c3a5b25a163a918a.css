@@ -1,0 +1,277 @@
+body {
+  background: #e75b4c;
+}
+.color {
+  background: #e75b4c;
+}
+
+.colorwhite {
+  background: white;
+}
+
+.navbar-text {
+  color: white;
+}
+
+.navcolor .active a,
+.navcolor .active a:hover {
+    background-color: red;
+
+}
+.nav{
+  margin-right: 5%;
+}
+
+.logo{
+  font-family: 'Poiret One', cursive;
+  font-size: 50px;
+  font-color: white;
+}
+
+.text{
+  margin-top: 15%;
+  font-size: 15px;
+}
+
+.boldtext{
+  margin-top: 30em;
+  color: #f6c2bc;
+  font-size: 5em;  
+}
+
+.font1{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+.font2{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 400;
+   /* font-family: 'Oswald', sans-serif;
+  font-weight: 300;*/
+  font-size: 6em; 
+}
+
+.font3{
+font-family: 'Poiret One', cursive;
+font-weight: 400;
+font-size: 5.5em;
+/*  font-family: 'Oswald', sans-serif;
+  font-weight: 100;*/
+}
+
+
+.rect {
+  height:200px;
+  border-style: solid;
+  border-color: grey;
+  border-width: 2px;
+    margin:1%;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+h1 {
+  margin-bottom: 0;
+  color: #FFF;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 6em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.25em;
+}
+
+.bold{
+  font-size: 18px;  
+}
+
+.uploadcare-dialog-opened {
+overflow: inherit!important;
+} 
+
+
+.arrow{
+  margin-top: 20%;
+  font-size: 55px;
+  color: rgba(255,255,255, 0.5);
+  background-color: transparent;
+  border: none;
+}
+
+a.arrow:hover{
+  color: rgba(255,255,255);
+}
+.allcards {
+  margin-top: 1%;
+}
+
+.btn-outline {
+    background: transparent;
+    color: inherit;
+    transition: all .5s;
+}
+
+.btn-outline:hover {
+    background: gray;
+    font-color: black;
+    transition: all .5s;
+}
+
+
+
+.btn-primary.btn-outline {
+    /*color: white;*/
+}
+
+.btn-primary.btn-outline:hover
+{
+    color: #fff;
+}
+
+.box {
+  /*margin-top: 12%;*/
+  border-style: solid;
+  border-color: #E6E6E6;
+  border-width: 2px;
+  border-radius: 10px;
+  height: 300px;
+  
+  /*margin-left: 22%;*/
+}
+
+.image {
+  width: 60%;
+   height: 93%;
+  float: left;
+  margin-top: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cardtext {
+  /*background: blue;*/
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+}
+
+.form {
+ background: transparent;
+  font-size: 15px;
+  border: none;
+  /*border-radius: 10px;*/
+}
+
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-size: 15px;
+}
+
+.footer {
+background: rgba(51,51,51,0.6);
+height: 90px;
+}
+
+.outline {
+  /*width:40%;*/
+  height: 60%;
+  border-style:dotted;
+  border-color: #E6E6E6;
+  border-width: 2px;
+  margin-top: 5%;
+
+}
+
+.numberCircle {
+    border-radius: 50%;
+  margin-left: 27%;
+    width: 46px;
+    height: 46px;
+    padding: 10px;
+
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+
+    font: 15px Arial, sans-serif;
+     z-index: 1;
+     position: relative;
+}
+
+.circle2 {
+  margin-left: 15%;
+   z-index: 1;
+   position: relative;
+}
+.line {
+  
+    z-index: -1;
+    position: relative;
+
+}
+
+.controlls {
+  /*margin-top: -32%;*/
+  /*float:right;*/
+}
+
+.modern {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+.cursive {
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+}
+.smimg {
+  width:50px;
+  height: 50px;
+}
+
+.img {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.cardtext textarea {
+  background: transparent;
+}
+
+.cardtext input {
+  background: transparent;
+  border: none;
+}
+#maintext{
+  /*font-size: 15px;*/
+ 
+}
+
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: #0000FF;
+}

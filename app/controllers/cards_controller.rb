@@ -11,6 +11,10 @@ class CardsController < ApplicationController
   def new
     @templateCard = Card.find_by_id(params[:template])
     @card = Card.new
+
+    if @templateCard
+     @card.image_url = @templateCard.image_url
+    end
   end
 
   def create
@@ -19,9 +23,11 @@ class CardsController < ApplicationController
     # @card.update(image_url: params[:image_url])
     
     if @card.save
+      puts "card saved"
       redirect_to @card
     else
-      redirect_to @user
+      puts "card not saved"
+      redirect_to new_user_card_path(@user)
     end 
 
   end
@@ -38,11 +44,12 @@ class CardsController < ApplicationController
   end
 
   def email
-    # @card = Card.find(params[:id])
+    @card = Card.find(params[:id])
     # require 'mandrill'  
     # m = Mandrill::API.new
     m = Mandrill::API.new ENV["MANDRILL_APIKEY"]
     send_to_email = params[:email]
+    # card_id = @card.id
     # m = Mandrill::API.new
    #  message = {
    #  :subject=> "You got an E_card!",
@@ -52,7 +59,7 @@ class CardsController < ApplicationController
    #  }
 
   message = {  
-   :subject=> "Hello from the Mandrill API",  
+   :subject=> "You got an e-card!",  
    :from_name=> "E_card_Designs",
    :text=>"Hi message, how are you?",  
    :to=>[  
@@ -61,7 +68,9 @@ class CardsController < ApplicationController
        :name=> "Recipient1"  
      }  
    ],  
-   :html=>"<html><h1>Hi <strong>message</strong>, how are you?</h1></html>",  
+   :html=>"<html>Your ecard!<a href='http://localhost:3000/cards/#{@card.id}'>click here</a></html>", 
+
+#{params[:send_to]}
    :from_email=>"test@test.com"  
   }  
   sending = m.messages.send message

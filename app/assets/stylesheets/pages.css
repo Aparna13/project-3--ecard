@@ -10,6 +10,14 @@
   color: #e75b4c;
 }
 
+.navbar-right li a:link {
+  color: #e75b4c;
+}
+
+.navbar-right li a:visited {
+  color: #e75b4c;
+}
+
 .nav a:visited {
   color: #e75b4c;
 }
@@ -26,7 +34,7 @@ a:hover {
 
 /* selected link */
 a:active {
-    color: #0000FF;
+    color: #e75b4c;
 }
 
 .logo{
@@ -40,7 +48,9 @@ a:active {
   font-color: #e75b4c;
 
 }
-
+.btn-default {
+  width: 150px;
+}
 
 .thnk{
 font-family: 'Poiret One', cursive;
@@ -58,4 +68,8 @@ font-size: 1.5em;
     background:  ;
     color: inherit;
     transition: all .5s;
+}
+
+.bottom {
+  margin-top: -65px;
 }

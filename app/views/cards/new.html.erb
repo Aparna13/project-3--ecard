@@ -29,10 +29,10 @@
           <p></p>
           <%= f.text_area :desc,:placeholder => "message" ,:size => "20x12", id: "maintext"%>
           <p class="text-center" style="display:inline-block;">
-            <input type="hidden" role="uploadcare-uploader"  data-images-only="" data-image-shrink="300x180 80%" data-public-key="e638bf2c12305f92b0c7" value="" name="card[image_url]" class="btn btn-info">
+            <input type="hidden" role="uploadcare-uploader"  data-images-only="" data-image-shrink="300x180 80%" data-public-key="e638bf2c12305f92b0c7" value="<%= @card.image_url %>" name="card[image_url]" class="btn btn-info">
           </p>
           <p class="text-center" style="display:inline-block;">
-            <%= f.submit "Create", class: "btn btn-primary" %>
+            <%= f.submit "Create", class: "btn btn-primary"  %>
           </p>
         <% end %>
       </div>
@@ -75,11 +75,9 @@
 
 </div>
 <div class="navbar navbar-default  navbar-fixed-bottom footer">
-<div class="container">
-<div class ="col-sm-11 col-sm-offset-1"></div>
-<!-- <hr class="line" width="448" align="center" size="10"> -->
-  <div class="numberCircle navbar-text">1</div>
-   <div class="numberCircle navbar-text circle2">2</div><div class="numberCircle navbar-text circle2">3</div>
+<div class="bottom text-center">
+<!--  -->
+   <img src="http://i.imgur.com/UNjOLQF.png" width="50%" alt="">
 </div>
 
 <!-- <script type="text/javascript">

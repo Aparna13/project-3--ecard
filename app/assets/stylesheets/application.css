@@ -88,6 +88,9 @@ h1 {
   font-size: 18px;  
 }
 
+.uploadcare-dialog-opened {
+overflow: inherit!important;
+} 
 
 
 .arrow{
@@ -99,7 +102,7 @@ h1 {
 }
 
 a.arrow:hover{
-  color: rgba(255,255,255);
+  color: rgb(255,255,255);
 }
 .allcards {
   margin-top: 1%;
@@ -120,7 +123,7 @@ a.arrow:hover{
 
 
 .btn-primary.btn-outline {
-    color: white;
+    /*color: white;*/
 }
 
 .btn-primary.btn-outline:hover
@@ -250,7 +253,7 @@ justify-content: center;
   border: none;
 }
 #maintext{
- /* font-size: 20px;*/
+  /*font-size: 15px;*/
  
 }
 

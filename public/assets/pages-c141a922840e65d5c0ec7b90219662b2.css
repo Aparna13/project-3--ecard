@@ -1,0 +1,75 @@
+.main {
+  background: white;
+}
+
+.navbar a:link {
+    color: #e75b4c;
+}
+
+.nav a:link {
+  color: #e75b4c;
+}
+
+.navbar-right li a:link {
+  color: #e75b4c;
+}
+
+.navbar-right li a:visited {
+  color: #e75b4c;
+}
+
+.nav a:visited {
+  color: #e75b4c;
+}
+
+/* visited link */
+a:visited {
+    color: #e75b4c;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+    color: #e75b4c;
+}
+
+.logo{
+  font-family: 'Poiret One', cursive;
+  font-size: 50px;
+  font-color: #e75b4c;
+}
+.head {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+  font-color: #e75b4c;
+
+}
+.btn-default {
+  width: 150px;
+}
+
+.thnk{
+font-family: 'Poiret One', cursive;
+font-weight: 400;
+font-size: 1.5em;
+/*  font-family: 'Oswald', sans-serif;
+  font-weight: 100;*/
+}
+
+.gray {
+  background:rgba(0,0,0,0.2)
+}
+
+.btn-out {
+    background:  ;
+    color: inherit;
+    transition: all .5s;
+}
+
+.bottom {
+  margin-top: -65px;
+}

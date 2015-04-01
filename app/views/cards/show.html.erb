@@ -5,7 +5,7 @@
       <a class="navbar-brand logo font" href="#">E_Cards_Designs</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-       <li class="navbar-text bold"><%= link_to "| Home |", root_path %>|</li> 
+       <li class="navbar-text bold"><%= link_to "| Home |", user_path(@current_user) %></li> 
         <li class="navbar-text bold"><%= link_to "| Log out |", signout_path %></li>
       
     </ul>
@@ -15,7 +15,7 @@
      <%= stylesheet_link_tag    'pages'%>
 <div class="container-fluid">
   <div class="row">
-  <%= @card.image_url %>bhbjb
+  <!-- <%= @card.image_url %>bhbjb  -->
     <div class="col-sm-6 col-sm-offset-3 box">
       <div class="image" style="background-image: url(<%= @card.image_url %>); background-size: cover; background-position:center;">
         <!--  -->
@@ -30,7 +30,8 @@
   </div>
   <br>
   <div class="row text-center">
-    <%= link_to "send", sendmail_path %><div class="btn btn-default col-sm-2 col-sm-offset-5">Send</div>
+    <%= link_to "send", sendmail_path, :class => "btn btn-info" %>
+    <!-- <div class="btn btn-default col-sm-2 col-sm-offset-5">Send</div> -->
 
   </div>
 </div>
@@ -43,4 +44,6 @@
   <div class="numberCircle navbar-text">1</div>
    <div class="numberCircle navbar-text circle2">2</div><div class="numberCircle navbar-text circle2">3</div>
 </div>
+
+
 
