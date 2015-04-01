@@ -2,13 +2,21 @@
   background: white;
 }
 
-a:link {
+.navbar a:link {
     color: #e75b4c;
+}
+
+.nav a:link {
+  color: #e75b4c;
+}
+
+.nav a:visited {
+  color: #e75b4c;
 }
 
 /* visited link */
 a:visited {
-    color: #333333;
+    color: #e75b4c;
 }
 
 /* mouse over link */
@@ -31,4 +39,23 @@ a:active {
   font-size: 20px;
   font-color: #e75b4c;
 
+}
+
+
+.thnk{
+font-family: 'Poiret One', cursive;
+font-weight: 400;
+font-size: 1.5em;
+/*  font-family: 'Oswald', sans-serif;
+  font-weight: 100;*/
+}
+
+.gray {
+  background:rgba(0,0,0,0.2)
+}
+
+.btn-out {
+    background:  ;
+    color: inherit;
+    transition: all .5s;
 }

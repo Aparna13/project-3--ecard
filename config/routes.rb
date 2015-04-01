@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root 'site#index'
 
 
+  get '/cards/:id/send', to: 'cards#sendmail', as: 'sendmail'
+  post '/cards/:id/send', to: 'cards#email', as:'email'
 
   get '/auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')

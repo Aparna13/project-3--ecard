@@ -33,6 +33,12 @@ gem 'bootstrap-wysihtml5-rails'
 
 gem 'tinymce-rails'
 
+# gem 'mandrill_mailer'
+
+gem 'mandrill-api'
+
+gem 'rails_12factor', group: :production
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

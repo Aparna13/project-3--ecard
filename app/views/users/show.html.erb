@@ -19,37 +19,24 @@ UPLOADCARE_PUBLIC_KEY = 'e638bf2c12305f92b0c7';
   <div class="text-center">
     <span class="head">Would you like to make your own card ?, give it a try.. </span><div class="btn btn-default"><%= link_to "Make my card >", new_user_card_path(@user) %></div>
   </div>
-  <div class="allcards text-center">
-      <a href="<%=new_user_card_path(@user)%>" class='eximg'>
-        <div class = 'col-sm-2 rect'>
-          <img src="http://cdn.coolmompicks.com/wp-content/uploads/2013/11/ScreenShot2013-07-29at100534AM.png" width ="100%" alt="">
-      </a>
-          <p>
-            <!-- <span class="pull-left">by: Sachi</span>&nbsp; &nbsp; &nbsp;
-            <span class="pull-right"> Like <span class="badge">42</span></span> -->
-          </p>
-       </div>
-        
-      <a href="<%= new_user_card_path(@user,@card) %>">
-        <div class = 'col-sm-2 rect'><img src="http://s2.postimg.org/lkku5wlyh/elephant.jpg" width ="100%"  alt="">
-        
-      </a>
-          <div>
-             <!-- <span class="pull-left">by: Sachi</span>&nbsp; &nbsp; &nbsp;
-             <span class="pull-right"> Like <span class="badge">42</span></span> -->
-          </div>
-        </div>
-        
-      <% @users.each do |user| %>
-        <% user.cards.each do |card| %>
-          <a href="<%=new_user_card_path(@user)%>?template=<%=card.id%>">
-           <div class = 'col-sm-2 rect' ><img src="<%= card.image_url %>"width ="100%" alt="">
-           </div>
-          </a>
-        
+  <div class="allcards text-center"> 
+    <div class="col-sm-12">     
+        <% @users.each do |user| %>
+          <% user.cards.each do |card| %>
+            <a href="<%=new_user_card_path(@user)%>?template=<%=card.id%>">
+             <div class = 'col-sm-2 rect' ><img src="<%= card.image_url %>"width ="100%" alt="">
+             </a>
+               <div>
+                 <!-- <span class="pull-left">by: Sachi</span>&nbsp; &nbsp; &nbsp;
+                 <span class="pull-right"> Like <span class="badge">42</span></span> -->
+              </div>
+            </div>
+            
+          
+          <% end %>
         <% end %>
-      <% end %>
     </div>
+ </div>
 
   
 

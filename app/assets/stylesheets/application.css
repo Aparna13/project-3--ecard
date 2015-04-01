@@ -33,19 +33,31 @@ body {
   font-size: 15px;
 }
 
+.boldtext{
+  margin-top: 30em;
+  color: #f6c2bc;
+  font-size: 5em;  
+}
+
 .font1{
   font-family: 'Oswald', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .font2{
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 400;
+   /* font-family: 'Oswald', sans-serif;
+  font-weight: 300;*/
+  font-size: 6em; 
 }
 
 .font3{
 font-family: 'Poiret One', cursive;
 font-weight: 400;
+font-size: 5.5em;
+/*  font-family: 'Oswald', sans-serif;
+  font-weight: 100;*/
 }
 
 
@@ -76,11 +88,7 @@ h1 {
   font-size: 18px;  
 }
 
-.boldtext{
-  margin-top: 30em;
-  color: #f6c2bc;
-  font-size: 5em;  
-}
+
 
 .arrow{
   margin-top: 20%;
@@ -102,6 +110,14 @@ a.arrow:hover{
     color: inherit;
     transition: all .5s;
 }
+
+.btn-outline:hover {
+    background: gray;
+    font-color: black;
+    transition: all .5s;
+}
+
+
 
 .btn-primary.btn-outline {
     color: white;
@@ -239,17 +255,17 @@ justify-content: center;
 }
 
 a:link {
-    color: #333333;
+    color: white;
 }
 
 /* visited link */
 a:visited {
-    color: #333333;
+    color: white;
 }
 
-/* mouse over link */
+
 a:hover {
-    color: #FF00FF;
+    color: black;
 }
 
 /* selected link */
