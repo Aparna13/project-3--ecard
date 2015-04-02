@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
-  imageUrl = "https://makinglemonadeblog.com/wp-content/uploads/2013/01/chalkboard_background_2.jpg";
+  // imageUrl = "https://makinglemonadeblog.com/wp-content/uploads/2013/01/chalkboard_background_2.jpg";
+  imageUrl = "/images/chalk.jpg";
+  
   $('#backbtn').on('click',function(e){
     e.preventDefault();
     $('.box').css('background-image', 'url(' + imageUrl + ')');
