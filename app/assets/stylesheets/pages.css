@@ -10,6 +10,13 @@
   color: #e75b4c;
 }
 
+.btn a:hover {
+  color: #e75b4c;
+}
+
+.btn a:hover {
+  color: #e75b4c;
+}
 .navbar-right li a:link {
   color: #e75b4c;
 }
@@ -28,13 +35,29 @@ a:visited {
 }
 
 /* mouse over link */
-a:hover {
+.nav a:hover {
     color: #FF00FF;
 }
 
 /* selected link */
 a:active {
     color: #e75b4c;
+}
+
+.uploadcare-widget-button-open {
+padding: .5em .8em;
+background: #e75b4c;
+width:150px;
+height: 30px;
+}
+
+
+.btn-warning {
+border-color: #e75b4c !important;
+background-color: gray !important;
+color:black;
+font-size: 13px !important;
+/*width:80px;*/
 }
 
 .logo{

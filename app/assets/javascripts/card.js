@@ -25,12 +25,12 @@ $(document).ready(function(){
 
     $('.dark').on('click',function(e){
     e.preventDefault();
-    $('#maintext').css('font-color', '#333333');
+    $('#maintext').css('color', '#333333');
       });
 
     $('.light').on('click',function(e){
      e.preventDefault();
-       $('#maintext').css('font-color', 'white');
+       $('#maintext').css('color', 'white');
     });
 
 
