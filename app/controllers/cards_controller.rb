@@ -73,7 +73,8 @@ class CardsController < ApplicationController
        :name=> "Recipient1"  
      }  
    ],  
-   :html=>"<html>Your ecard!<a href='http://localhost:3000/cards/#{@card.id}/preview'>click here</a></html>", 
+   :html=>"<html>Your ecard!<a href='https://strawberry-pudding-8666.herokuapp.com/cards/#{@card.id}/preview'>click here</a></html>", 
+   
 
 #{params[:send_to]}
    :from_email=>"test@test.com"  
