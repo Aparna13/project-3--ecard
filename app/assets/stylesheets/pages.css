@@ -90,6 +90,11 @@ font-size: 13px !important;
   width: 150px;
 }
 
+.btn-default a:link {
+  color: #e75b4c;
+
+}
+
 .thnk{
 font-family: 'Poiret One', cursive;
 font-weight: 400;
