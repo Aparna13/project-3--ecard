@@ -20,21 +20,19 @@
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3 box">
       <div class="image">
+       <%= form_for @card,url: user_cards_path, html: {:class => "form-group"} do |f| %>
         <img src="" class="img"  alt="">
        <!--  <div class="Photo" style="background-image: url(<%= @card.image_url %>); background-size: cover; background-position:center;"></div> -->
       </div>
       <div class="cardtext">
-        <%= form_for @card,url: user_cards_path, html: {:class => "form-group"} do |f| %>
           <%= f.text_field :title,:placeholder => "To,",:size => "26x18"  %>
           <p></p>
-          <%= f.text_area :desc,:placeholder => "message" ,:size => "20x12", id: "maintext"%>
-          <p class="text-center" style="display:inline-block;">
+          <%= f.text_area :desc,:placeholder => "message" ,id: "maintext"%>
+          <span><%= f.label "Share my image with other users?" %> 
+          <%= f.check_box :is_shareable,class: "checkbox"%></span>
+          <p class="text-center" style="display:inline-block;"> 
             <input type="hidden" role="uploadcare-uploader"  data-images-only="" data-image-shrink="300x180 80%" data-public-key="e638bf2c12305f92b0c7" value="<%= @card.image_url %>" name="card[image_url]" class="btn btn-info">
           </p>
-          <p class="text-center" style="display:inline-block;">
-            <%= f.submit "Create", class: "btn btn-warning btn-sm"  %>
-          </p>
-        <% end %>
       </div>
     </div>
     <div class="controlls col-sm-3"> 
@@ -44,7 +42,7 @@
           Background <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" role="menu">
-          <li><a href="javascript:void(0)"><img src="/images/chalk.jpg" class="smimg" id="backbtn" alt=""></a></li>
+          <li><a href="javascript:void(0)"><img src="https://farm3.staticflickr.com/2604/4030150829_168d9461e3_o.jpg" class="smimg" id="backbtn" alt=""></a></li>
           <li><a href="javascript:void(0)"><img src="" class="smimg" id="backwhtbtn" alt=""></a></li>
         </ul>
       </div>
@@ -69,7 +67,14 @@
           <li><%= link_to "Dark",root_path, class: "dark"%></li>
           <li><%= link_to "Light",root_path, class: "light"%></li>
         </ul>
-      </div>  
+      </div> 
+      <p></p>
+      <br>
+      <div class="btn-group"> 
+            <%= f.submit "Create", class: "btn btn-default btncolor"  %>
+          </p>
+        <% end %>
+      </div> 
     </div> <!-- closing the row -->
   </div>
 
@@ -77,7 +82,8 @@
 <div class="navbar navbar-default  navbar-fixed-bottom footer">
 <div class="navbar-text text-center">
 <!--  -->
-   <img src="https://i.imgur.com/qhi8onr.png" width="50%" alt="">
+   <img src="https://i.imgur.com/jy1vl2i.png" width="40%" alt="">
+   <br>
 </div>
 
 <!-- <script type="text/javascript">

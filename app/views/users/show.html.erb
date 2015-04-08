@@ -17,15 +17,16 @@ UPLOADCARE_PUBLIC_KEY = 'e638bf2c12305f92b0c7';
 <%= stylesheet_link_tag    'pages'%>
 
   <div class="text-center">
-    <span class="head">Would you like to make your own card ?, give it a try.. </span><div class="btn btn-warning"><%= link_to "Make my card >", new_user_card_path(@user) %></div>
+    <span class="head">Would you like to make your own card ?, give it a try.. </span><div class="btn btn-default"><%= link_to "Make my card >", new_user_card_path(@user) %></div>
   </div>
   <div class="allcards text-center"> 
     <div class="col-sm-12">     
         <% @cards.each do |card| %>
           <%# user.cards.each do |card| %>
+          <% if card.is_shareable == true %>
 
             <a href="<%=new_user_card_path(@user)%>?template=<%=card.id%>">
-             <div class = 'col-sm-2 rect' ><img src="<%= card.image_url %>"width ="100%" alt="">
+             <div class = 'col-sm-2 rect' ><img src="<%= card.image_url %>"width ="100%" height="100%" alt="">
              </a>
                <div>
                  <!-- <span class="pull-left">by: Sachi</span>&nbsp; &nbsp; &nbsp;
@@ -34,7 +35,7 @@ UPLOADCARE_PUBLIC_KEY = 'e638bf2c12305f92b0c7';
             </div>
             
           
-          <%# end %>
+          <% end %>
         <% end %>
     </div>
  </div>

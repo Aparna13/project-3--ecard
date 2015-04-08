@@ -46,19 +46,34 @@ a:active {
 
 .uploadcare-widget-button-open {
 padding: .5em .8em;
-background: #e75b4c;
+background: white;
 width:150px;
 height: 30px;
+border: 2px solid #e75b4c;
+color: gray;
+}
+
+
+.uploadcare-widget-button-open:hover {
+background: #e75b4c;
+border: 2px solid white;
+color: white;
 }
 
 
 .btn-warning {
 border-color: #e75b4c !important;
-background-color: gray !important;
 color:black;
 font-size: 13px !important;
 /*width:80px;*/
 }
+
+.btncolor {
+  background: #e75b4c !important;
+  color: white !important;
+  text-shadow: none !important;
+}
+
 
 .logo{
   font-family: 'Poiret One', cursive;
@@ -93,6 +108,19 @@ font-size: 1.5em;
     transition: all .5s;
 }
 
-.bottom {
-  margin-top: -65px;
+
+
+label {
+    /* Other styling.. */
+    text-align: right;
+    color: gray;
+    clear: both;
+    float:left;
+    margin-right:8px;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.white {
+  color: white;
 }

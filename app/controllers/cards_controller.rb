@@ -38,6 +38,11 @@ class CardsController < ApplicationController
     # @user = User.find(params[:user_id])
   end
 
+  def emailpreview
+    @card = Card.find(params[:id])
+    render :emailpreview
+  end
+
   def sendmail
     @card = Card.find(params[:id])
     render :sendmail
@@ -68,7 +73,7 @@ class CardsController < ApplicationController
        :name=> "Recipient1"  
      }  
    ],  
-   :html=>"<html>Your ecard!<a href='http://localhost:3000/cards/#{@card.id}'>click here</a></html>", 
+   :html=>"<html>Your ecard!<a href='http://localhost:3000/cards/#{@card.id}/preview'>click here</a></html>", 
 
 #{params[:send_to]}
    :from_email=>"test@test.com"  

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get '/cards/:id/send', to: 'cards#sendmail', as: 'sendmail'
   post '/cards/:id/send', to: 'cards#email', as:'email'
+  get '/cards/:id/preview', to: 'cards#emailpreview', as: 'emailpreview'
 
   get '/auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')

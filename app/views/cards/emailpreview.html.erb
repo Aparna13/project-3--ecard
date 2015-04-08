@@ -5,7 +5,7 @@
       <a class="navbar-brand logo font" href="#">E_Cards_Designs</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-       <li class="navbar-text bold"><%= link_to "| Home |", user_path(@current_user) %></li> 
+       
       
       
     </ul>
@@ -24,25 +24,22 @@
         <%= @card.title %>
         <p></p>
         <%= @card.desc %>
+        <%= @card.id %>
        
       </div>
     </div>
   </div>
   <br>
   <div class="row text-center">
-    <%= link_to "send", sendmail_path, :class => "btn btn-default btncolor" %>
+   
     <!-- <div class="btn btn-default col-sm-2 col-sm-offset-5">Send</div> -->
 
   </div>
 </div>
 
-
 <div class="navbar navbar-default  navbar-fixed-bottom footer">
-<div class="navbar-text text-center">
-  <img src="https://i.imgur.com/QrtNL1J.png" width="40%" alt="">
+<div class="navbar-text "><span class="white">Card created @E_Cards_Designs</span></div>
 </div>
-
-
 
 
 
